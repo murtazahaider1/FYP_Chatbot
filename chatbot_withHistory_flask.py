@@ -30,7 +30,7 @@ Please make a standalone question using the above information and answer the que
 """
 CONDENSE_QUESTION_PROMPT = PromptTemplate.from_template(PROMPT_TEMPLATE)
 
-openai_api_key = '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'
+openai_api_key = os.getenv()
 client = OpenAI(api_key=openai_api_key)
 
 csv_file_path = 'Data Classification - Sheet1.csv'
